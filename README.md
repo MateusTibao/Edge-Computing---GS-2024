@@ -57,7 +57,7 @@ Dessa forma no sistema coleta a cada 1 minuto as média das medições, feitas a
 #### Configurar Node-Red:
 - Use a opção de importar fluxo, disponível no canto esquerdo do Node-RED, e copie o arquivo JSON abaixo para copiar o fluxo do projeto.
 
-json 
+```json 
 [
     {
         "id": "ad8ac3338478bb7f",
@@ -497,7 +497,7 @@ json
         "order": 1
     }
 ]
-
+```
 
 #### Simular coleta de dados:
 - Para isso, basta definir diferentes parâmetros para registro dos sensores em diversos períodos de medição antes do envio do minuto completo.
@@ -506,7 +506,7 @@ json
 - Como dito, nosso projeto permite visualização tanto em Node-RED quanto Tago.io, ambos exibem os dados retirados.
 
 ## ⚙️ Código fonte
-cpp
+```cpp
 // Biblioteca
 #include <WiFi.h>
 #include <PubSubClient.h>
@@ -721,7 +721,7 @@ void loop() {
   </tr>
 </table>
 </p>
-
+```
 
 ## 📝 Licença
 
