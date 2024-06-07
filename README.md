@@ -50,7 +50,7 @@ Dessa forma no sistema coleta a cada 1 minuto as média das medições, feitas a
 
 #### Acessos:
 
-- [Link para o Projeto](https://wokwi.com/projects/399357576985434113)
+- [Link para o Projeto Wokwi](https://wokwi.com/projects/399357576985434113)
 
 - [Link para o DashBoard Tago.io](https://660218f01a37490011c7e5f7.tago.run/dashboards/info/665ce467e101fe0008a7d4fc?anonymousToken=00000000-6602-18f0-1a37-490011c7e5f7)
 
