@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/logo.jpg" />
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/mare cheia.svg" />
 </h1>
 
 <h3 align="center"> 
@@ -7,13 +7,13 @@
 </h3>
 
 <p align="center">
- Problema •
- Solução •
- Protótipo • 
- Configuração e execução •  
- Código-fonte •
- Autores •
- Licença 
+  <a href="## 🎣 Problema abordado">🎣 Problema •</a>
+  <a href="## 🦾 Solução proposta">🦾 Solução •</a>
+  <a href="## 🚧 Protótipo">🦾 Protótipo • </a>
+ <a href="## ⚙️ Configuração e execução">⚙️ Configuração e execução •  </a> 
+ <a href="## ⚙️ Código fonte">⚙️ Código-fonte •</a> 
+ <a href=" ## 👨🏽‍🏭👨🏽‍🔧👨🏽‍🏭 Autores">👨🏽‍🏭👨🏽‍🔧👨🏽‍🏭 Autores •</a>
+ <a href="## 📝 Licença">📝 Licença •</a>
 </p>
 
 
@@ -29,6 +29,12 @@ Maré Cheia é um sistema de monitoramento e divulgação de dados sobre a sobre
 Em seguida, são publicados em um site baseado em React, oferecendo dashboards e textos explicativos acessíveis ao público. Este sistema resolve a falta de dados precisos, conscientização limitada, impactos socioeconômicos e a falta de controle e fiscalização, fornecendo informações críticas em tempo real para comunidades costeiras, empresas e governantes. 
 
 A transparência e a acessibilidade dos dados promovem o engajamento comunitário e a implementação de políticas de pesca sustentável, contribuindo para a recuperação dos ecossistemas marinhos e a segurança alimentar das comunidades dependentes dos recursos pesqueiros.
+
+## ✅ Features 
+- [X] Site disponibilizando informações para usuário
+- [X] Protótipo de sensores
+- [X] Análise de dados
+---
 
 ## 🚧 Protótipo
 
@@ -51,7 +57,7 @@ Dessa forma no sistema coleta a cada 1 minuto as média das medições, feitas a
 #### Configurar Node-Red:
 - Use a opção de importar fluxo, disponível no canto esquerdo do Node-RED, e copie o arquivo JSON abaixo para copiar o fluxo do projeto.
 
-```json 
+json 
 [
     {
         "id": "ad8ac3338478bb7f",
@@ -491,7 +497,7 @@ Dessa forma no sistema coleta a cada 1 minuto as média das medições, feitas a
         "order": 1
     }
 ]
-```
+
 
 #### Simular coleta de dados:
 - Para isso, basta definir diferentes parâmetros para registro dos sensores em diversos períodos de medição antes do envio do minuto completo.
@@ -500,7 +506,7 @@ Dessa forma no sistema coleta a cada 1 minuto as média das medições, feitas a
 - Como dito, nosso projeto permite visualização tanto em Node-RED quanto Tago.io, ambos exibem os dados retirados.
 
 ## ⚙️ Código fonte
-```cpp
+cpp
 // Biblioteca
 #include <WiFi.h>
 #include <PubSubClient.h>
@@ -679,24 +685,42 @@ void loop() {
     presenceCount = 0;
   }
 }
-```
 
-## 👨🏽‍🏭👨🏽‍🔧 Autores
-<p align="Center">
- <a href="https://github.com/Gh0stE11">
- <img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/C4E03AQGQNxYibVc4nA/profile-displayphoto-shrink_400_400/0/1655830181624?e=1723075200&v=beta&t=rWSJ14lOO0KYwGnE_JMGTHId1k7G9h1PRCWAk9HYbtQ" width="100px;" alt=""/>
- <br />
- <sub><b>Caio Hideki</b></sub> <sub><br><b>RM 553630</b></sub></a> <a href="https://github.com/Gh0stE11" title="Hideki">🚀</a>
- <br />
- <a href="https://github.com/JorgeBooz00">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/107008455?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Jorge Booz</b></sub> <sub><br><b>RM 552700</b></sub></a> <a href="https://github.com/JorgeBooz00" title="Booz">🚀</a>
- <br /> <a href="https://github.com/MateusTibao">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/143664123?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Mateus Tibao</b></sub> <sub><br><b>RM 553267</b></sub></a> <a href="https://github.com/MateusTibao" title="Tibao">🚀</a>
- <br />
+
+## 👨🏽‍🏭👨🏽‍🔧👨🏽‍🏭 Autores
+<p align="center">
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Gh0stE11">
+        <img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/C4E03AQGQNxYibVc4nA/profile-displayphoto-shrink_400_400/0/1655830181624?e=1723075200&v=beta&t=rWSJ14lOO0KYwGnE_JMGTHId1k7G9h1PRCWAk9HYbtQ" width="100px;" alt=""/>
+        <br />
+        <sub><b>Caio Hideki</b></sub> <sub><br><b>RM 553630</b></sub>
+      </a>
+      <br />
+      🚀
+    </td>
+    <td align="center">
+      <a href="https://github.com/JorgeBooz00">
+        <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/107008455?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Jorge Booz</b></sub> <sub><br><b>RM 552700</b></sub>
+      </a>
+      <br />
+      🚀
+    </td>
+    <td align="center">
+      <a href="https://github.com/MateusTibao">
+        <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/143664123?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Mateus Tibao</b></sub> <sub><br><b>RM 553267</b></sub>
+      </a>
+      <br />
+      🚀
+    </td>
+  </tr>
+</table>
+</p>
 
 
 ## 📝 Licença
