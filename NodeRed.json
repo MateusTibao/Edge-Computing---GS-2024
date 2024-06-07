@@ -1,0 +1,439 @@
+[
+    {
+        "id": "ad8ac3338478bb7f",
+        "type": "tab",
+        "label": "Tago",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b38cb698652164f6",
+        "type": "mqtt in",
+        "z": "ad8ac3338478bb7f",
+        "name": "Temperatura",
+        "topic": "/ThinkIOT/temp",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "4423636a2f303e43",
+        "inputs": 0,
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "f01474b6605cb0eb"
+            ]
+        ]
+    },
+    {
+        "id": "d4991842fa9fe766",
+        "type": "mqtt in",
+        "z": "ad8ac3338478bb7f",
+        "name": "Luminosidade",
+        "topic": "/ThinkIOT/luminosity",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "4423636a2f303e43",
+        "inputs": 0,
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "7652022241697a04"
+            ]
+        ]
+    },
+    {
+        "id": "8c7706914d682eea",
+        "type": "mqtt in",
+        "z": "ad8ac3338478bb7f",
+        "name": "Presença",
+        "topic": "/ThinkIOT/presence",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "4423636a2f303e43",
+        "inputs": 0,
+        "x": 160,
+        "y": 480,
+        "wires": [
+            [
+                "c80e208f1db39084"
+            ]
+        ]
+    },
+    {
+        "id": "f01474b6605cb0eb",
+        "type": "json",
+        "z": "ad8ac3338478bb7f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 370,
+        "y": 220,
+        "wires": [
+            [
+                "31c19ae1bf0b7891",
+                "538d5f3b9ffc3a83"
+            ]
+        ]
+    },
+    {
+        "id": "7652022241697a04",
+        "type": "json",
+        "z": "ad8ac3338478bb7f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 360,
+        "wires": [
+            [
+                "fb2920e8d1221e57",
+                "f8e9984f1360e6f6"
+            ]
+        ]
+    },
+    {
+        "id": "c80e208f1db39084",
+        "type": "json",
+        "z": "ad8ac3338478bb7f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 480,
+        "wires": [
+            [
+                "8d3c892cb35ef816",
+                "8fb0aa62dc3fa4e5"
+            ]
+        ]
+    },
+    {
+        "id": "31c19ae1bf0b7891",
+        "type": "ui_chart",
+        "z": "ad8ac3338478bb7f",
+        "name": "Temperatura",
+        "group": "group1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatura (°C)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#00bfff",
+            "#00bfff",
+            "#00bfff",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 570,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb2920e8d1221e57",
+        "type": "ui_chart",
+        "z": "ad8ac3338478bb7f",
+        "name": "Luminosidade",
+        "group": "group1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Luminosidade",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1023",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#00bfff",
+            "#00bfff",
+            "#00bfff"
+        ],
+        "outputs": 1,
+        "x": 600,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d3c892cb35ef816",
+        "type": "ui_chart",
+        "z": "ad8ac3338478bb7f",
+        "name": "Presença",
+        "group": "group1",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Contagem de Presença",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#00bfff",
+            "#00bfff",
+            "#00bfff"
+        ],
+        "outputs": 1,
+        "x": 580,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "538d5f3b9ffc3a83",
+        "type": "function",
+        "z": "ad8ac3338478bb7f",
+        "name": "Preparar Dados Temp",
+        "func": "msg.headers = {\n    'Content-Type': 'application/json',\n    'Device-Token': '4bd702ba-55ef-47d4-ae68-fd526b0815de'\n};\n\nmsg.payload = [\n    {\n        variable: 'temperatura',\n        value: parseFloat(msg.payload)\n    }\n];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 240,
+        "wires": [
+            [
+                "75d45f449f2ba7cf"
+            ]
+        ]
+    },
+    {
+        "id": "f8e9984f1360e6f6",
+        "type": "function",
+        "z": "ad8ac3338478bb7f",
+        "name": "Preparar Dados Luminosidade",
+        "func": "msg.headers = {\n    'Content-Type': 'application/json',\n    'Device-Token': '4bd702ba-55ef-47d4-ae68-fd526b0815de'\n};\n\nmsg.payload = [\n    {\n        variable: 'luminosidade',\n        value: parseInt(msg.payload)\n    }\n];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 400,
+        "wires": [
+            [
+                "ee952fcf57ca9e26"
+            ]
+        ]
+    },
+    {
+        "id": "8fb0aa62dc3fa4e5",
+        "type": "function",
+        "z": "ad8ac3338478bb7f",
+        "name": "Preparar Dados Presença",
+        "func": "msg.headers = {\n    'Content-Type': 'application/json',\n    'Device-Token': '4bd702ba-55ef-47d4-ae68-fd526b0815de'\n};\n\nmsg.payload = [\n    {\n        variable: 'presenca',\n        value: parseInt(msg.payload)\n    }\n];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 520,
+        "wires": [
+            [
+                "287e72d27ca5491c"
+            ]
+        ]
+    },
+    {
+        "id": "75d45f449f2ba7cf",
+        "type": "http request",
+        "z": "ad8ac3338478bb7f",
+        "name": "Enviar Temperatura para Tago",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.tago.io/data",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "x": 890,
+        "y": 240,
+        "wires": [
+            [
+                "cf9a468b3513497a"
+            ]
+        ]
+    },
+    {
+        "id": "ee952fcf57ca9e26",
+        "type": "http request",
+        "z": "ad8ac3338478bb7f",
+        "name": "Enviar Luminosidade para Tago",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.tago.io/data",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 950,
+        "y": 400,
+        "wires": [
+            [
+                "32607bbbdf45afd3"
+            ]
+        ]
+    },
+    {
+        "id": "287e72d27ca5491c",
+        "type": "http request",
+        "z": "ad8ac3338478bb7f",
+        "name": "Enviar Presença para Tago",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.tago.io/data",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 840,
+        "y": 520,
+        "wires": [
+            [
+                "160784a687d511b1"
+            ]
+        ]
+    },
+    {
+        "id": "cf9a468b3513497a",
+        "type": "debug",
+        "z": "ad8ac3338478bb7f",
+        "name": "Debug Temp",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1170,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "32607bbbdf45afd3",
+        "type": "debug",
+        "z": "ad8ac3338478bb7f",
+        "name": "Debug Luminosidade",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1240,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "160784a687d511b1",
+        "type": "debug",
+        "z": "ad8ac3338478bb7f",
+        "name": "Debug Presença",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1110,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "4423636a2f303e43",
+        "type": "mqtt-broker",
+        "name": "Mosquitto",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "group1",
+        "type": "ui_group",
+        "name": "Medições",
+        "tab": "tab1",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "tab1",
+        "type": "ui_tab",
+        "name": "Monitoramento",
+        "icon": "dashboard",
+        "order": 1
+    }
+]
