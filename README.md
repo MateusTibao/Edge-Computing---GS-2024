@@ -44,7 +44,7 @@ Dessa forma no sistema coleta a cada 1 minuto as média das medições, feitas a
 
 #### Demonstração de protótipo:
 
-- [Link para o vídeo](  )
+- [Link para o vídeo](https://youtu.be/RugcxLep43E)
 
 ## ⚙️ Configuração e execução
 
